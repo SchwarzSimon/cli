@@ -34,6 +34,8 @@ jobs:
       - name: 🔍 Get PR number from artifact
         id: pr
         run: |
+          ls -la .
+          ls -la pr-number
           if [ -f pr-number/pr-number.txt ]; then
             PR_NUMBER=$(cat pr-number/pr-number.txt)
             echo "result=$PR_NUMBER" >> $GITHUB_OUTPUT
